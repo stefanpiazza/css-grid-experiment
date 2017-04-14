@@ -5,7 +5,9 @@ Basic css grid experiment
 See below
 
 ## Instalation
-```npm install or yarn```
+```
+npm install or yarn
+```
 
 ## Usage
 Runs basic webpack command
@@ -27,3 +29,7 @@ Runs browsersync
 ```
 server-sync: webpack --watch
 ```
+
+## Credit 
+Awesome artwork belongs to Konstantin Meier  
+https://www.behance.net/gallery/38503275/Rocket-League-Wallpaper-Collection
