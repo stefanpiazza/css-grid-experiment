@@ -14,42 +14,38 @@
 
 .c-splash__items {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 20% 20% 20% 20% 20%;
-
-	@media (orientation: landscape) {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 33.33333% 33.33333% 33.33333%;
-	}
-
+	grid-template-columns: repeat(12, [col] 1fr );
+	grid-template-rows: repeat(12, [row] 1fr );
 	height: 100vh;
 	overflow: hidden;
 	width: 100vw;
+	grid-gap: 1vmin;
 }
 
 .c-splash__item {
-	grid-column: span 2;
-	grid-row: span 1;
+	grid-column: span 6;
+	grid-row: span 2;
 	position: relative;
 
 	@media (orientation: portrait) {
 		&:nth-child(2) {
-			grid-column: span 4;
+			grid-column: span 12;
+			grid-row: span 3;
 		}
 	}
 
 	&--main {
-		grid-column: span 4;
-		grid-row: span 2;
+		grid-column: span 12;
+		grid-row: span 5;
 	}
 
 	@media (orientation: landscape) {
-		grid-column: span 1;
-		grid-row: span 1;
+		grid-column: span 4;
+		grid-row: span 4;
 
 		&--main {
-			grid-column: span 2;
-			grid-row: span 2;
+			grid-column: span 8;
+			grid-row: span 8;
 		}
 	}
 
